@@ -11,6 +11,9 @@ prereqs :
 test :
 	$(PWD)/env/bin/python test_project/manage.py test helloapp.tests
 
+syncdb :
+	$(PWD)/env/bin/python test_project/manage.py syncdb
+
 migrate :
 	$(PWD)/env/bin/python test_project/manage.py migrate
 
