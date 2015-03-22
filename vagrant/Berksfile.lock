@@ -1,4 +1,7 @@
 DEPENDENCIES
+  helloworld
+    git: git://github.com/katerina7479/helloworld-cookbook.git
+    revision: fc9035791f3c6825dc09d48d655e6b828cc619b3
   nginx
 
 GRAPH
@@ -6,6 +9,7 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.2.0)
+  helloworld (0.1.0)
   nginx (2.7.6)
     apt (~> 2.2)
     bluepill (~> 2.3)

@@ -4,9 +4,12 @@
   "description": "Role for local helloworld app",
   "chef_type": "role",
 
-  "default_attributes": {},
+  "default_attributes": {
+    "app": {"sites": [{"name": "test"}]}
+  },
   "override_attributes": {},
   "run_list": [
-    "recipe[nginx]"
+    "recipe[nginx]",
+    "recipe[helloworld::nginx_sites]"
   ]
 }

@@ -1,3 +1,4 @@
 source "https://supermarket.chef.io"
 
 cookbook 'nginx'
+cookbook 'helloworld', git: 'git://github.com/katerina7479/helloworld-cookbook.git'
