@@ -1,0 +1,12 @@
+{
+  "name": "helloworld-local",
+  "json_class": "Chef::Role",
+  "description": "Role for local helloworld app",
+  "chef_type": "role",
+
+  "default_attributes": {},
+  "override_attributes": {},
+  "run_list": [
+    "recipe[nginx]"
+  ]
+}
