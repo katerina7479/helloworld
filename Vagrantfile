@@ -1,4 +1,8 @@
 Vagrant.configure("2") do |config|
+    config.trigger.before [:reload, :halt], stdout: true do
+        `rm .vagrant/machines/default/virtualbox/synced_folders`
+    end
+
     config.vm.box = "ubuntu/trusty64"
     
     config.vm.network "forwarded_port", guest: 80, host: 8080
