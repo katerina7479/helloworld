@@ -3,6 +3,7 @@ CC := /usr/bin/gcc
 
 prereqs :
 	virtualenv env
+	$(PWD)/env/bin/pip install --upgrade pip
 	CC=$(CC) $(PWD)/env/bin/pip install -r requirements.txt
 	$(PWD)/env/bin/django-admin.py startproject test_project || echo "test_project already created"
 	$(PWD)/env/bin/python setup.py develop
@@ -15,3 +16,9 @@ migrate :
 
 server :
 	$(PWD)/env/bin/python test_project/manage.py runserver
+
+freeze :
+	$(PWD)/env/bin/pip freeze > requirements.txt
+
+clean :
+	rm -rf env test_project
