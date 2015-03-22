@@ -1,5 +1,6 @@
+from setuptools import setup, find_packages
+import helloapp
 
-from distutils.core import setup
 
 setup(name='helloapp',
       version='0.0',
@@ -7,5 +8,5 @@ setup(name='helloapp',
       author='Katerina Hanson',
       author_email='katerina.hanson@gmail.com',
       url='',
-      packages=['distutils', 'distutils.command'],
+      packages=find_packages(),
      )
