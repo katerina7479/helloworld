@@ -63,3 +63,4 @@ target/
 *.sqlite3
 
 test_project/
+.vagrant
