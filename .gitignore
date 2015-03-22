@@ -56,6 +56,9 @@ target/
 # PyCharm
 .idea/
 
+# Vagrant files
+.vagrant/
+
 # Sqlite3
 *.sqlite3
 
