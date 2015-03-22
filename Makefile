@@ -8,10 +8,10 @@ prereqs :
 	$(PWD)/env/bin/python setup.py develop
 
 test :
-	$(PWD)/env/bin/python test_project/manage.py test helloapp.tests --settings=$(SETTINGS)
+	$(PWD)/env/bin/python test_project/manage.py test helloapp.tests
 
 migrate :
-    $(PWD)/env/bin/python test_project/manage.py migrate
+	$(PWD)/env/bin/python test_project/manage.py migrate
 
 server :
-    $(PWD)/env/bin/python test_project/manage.py runserver
+	$(PWD)/env/bin/python test_project/manage.py runserver
