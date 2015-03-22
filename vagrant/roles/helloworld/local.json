@@ -14,7 +14,8 @@
             "hostname": "localhost",
             "root": "/vagrant/"
           }
-        }]
+        }
+      ]
     }
   },
   "override_attributes": {},
