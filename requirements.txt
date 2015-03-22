@@ -1,3 +1,2 @@
 Django==1.7.7
--e git+git@github.com:katerina7479/helloworld.git@46cd114ab67621dfc8b40ece56532f95d17210d8#egg=helloapp-master
 South==1.0.2
