@@ -20,7 +20,9 @@
   },
   "override_attributes": {},
   "run_list": [
-    "recipe[nginx]",
-    "recipe[helloworld::nginx_sites]"
+	  "recipe[nginx]",
+	  "recipe[python]",
+	  "recipe[helloworld::nginx_sites]",
+	  "recipe[helloworld::python_envs]"
   ]
 }

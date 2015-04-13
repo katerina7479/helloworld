@@ -1,14 +1,15 @@
 DEPENDENCIES
   helloworld
     git: git://github.com/katerina7479/helloworld-cookbook.git
-    revision: 3eb47548b0fcef7dac5ebfbe11ed177eef116b2e
+    revision: eb944256a86780fd9c2d58ab075867e93273783b
   nginx
+  python
 
 GRAPH
-  apt (2.6.1)
+  apt (2.7.0)
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
-  build-essential (2.2.0)
+  build-essential (2.2.2)
   helloworld (0.1.0)
   nginx (2.7.6)
     apt (~> 2.2)
@@ -18,11 +19,14 @@ GRAPH
     runit (~> 1.2)
     yum-epel (~> 0.3)
   ohai (2.0.1)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   rsyslog (1.15.0)
   runit (1.5.18)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  yum (3.5.3)
+  yum (3.5.4)
   yum-epel (0.6.0)
     yum (~> 3.0)
