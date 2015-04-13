@@ -1,7 +1,7 @@
 DEPENDENCIES
   helloworld
     git: git://github.com/katerina7479/helloworld-cookbook.git
-    revision: eb944256a86780fd9c2d58ab075867e93273783b
+    revision: fa560625e95ba1c44eb67e4e9d0fa17708a6568d
   nginx
   python
 

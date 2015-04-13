@@ -23,4 +23,5 @@ freeze :
 	$(PWD)/env/bin/pip freeze > requirements.txt
 
 clean :
-	rm -rf env test_project
+	rm -rf env test_project $(PROJECT).egg-info
+	rm develop.db
