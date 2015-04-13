@@ -6,31 +6,27 @@
 
   "default_attributes": {
     "app": {
-	  "inits": {
-		  "helloworld":{
+	  "inits": [
+		  {
+			"name": "helloworld",
 			"start_on": "vagrant-mounted",
 			"user": "vagrant",
-			"app_path": "/vagrant",
-			"virtual_env_path": "/home/vagrant/hello_env"
+			"app_path": "/vagrant"
 		  }
-	  },
-      "sites": [
-        {
-          "name": "test",
-          "variables": {
-            "port": 80,
-            "hostname": "localhost",
-            "root": "/vagrant/"
-          }
-        }
-      ]
+	  ],
+	  "python_apps":[
+		  {
+			  "name": "helloworld",
+			  "user": "vagrant",
+			  "group": "vagrant",
+			  "base_dir": "/vagrant"
+		  }
+	  ]
     }
   },
   "override_attributes": {},
   "run_list": [
-	  "recipe[nginx]",
 	  "recipe[python]",
-	  "recipe[helloworld::nginx_sites]",
 	  "recipe[helloworld::python_envs]",
 	  "recipe[helloworld::upstarts]"
   ]
